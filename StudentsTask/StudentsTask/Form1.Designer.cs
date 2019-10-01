@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studentsDatabaseDataSet = new StudentsTask.StudentsDatabaseDataSet();
-            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsTableAdapter = new StudentsTask.StudentsDatabaseDataSetTableAdapters.StudentsTableAdapter();
+            this.StudentsDataGridView = new System.Windows.Forms.DataGridView();
             this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +37,9 @@
             this.indexNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.markDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentsDatabaseDataSet = new StudentsTask.StudentsDatabaseDataSet();
+            this.studentsTableAdapter = new StudentsTask.StudentsDatabaseDataSetTableAdapters.StudentsTableAdapter();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SearchButton = new System.Windows.Forms.Button();
@@ -47,16 +47,16 @@
             this.EditButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsDatabaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // StudentsDataGridView
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.StudentsDataGridView.AutoGenerateColumns = false;
+            this.StudentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StudentsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Checkbox,
             this.iDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
@@ -64,25 +64,11 @@
             this.indexNumberDataGridViewTextBoxColumn,
             this.dateOfBirthDataGridViewTextBoxColumn,
             this.markDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.studentsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(644, 255);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // studentsDatabaseDataSet
-            // 
-            this.studentsDatabaseDataSet.DataSetName = "StudentsDatabaseDataSet";
-            this.studentsDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentsBindingSource
-            // 
-            this.studentsBindingSource.DataMember = "Students";
-            this.studentsBindingSource.DataSource = this.studentsDatabaseDataSet;
-            // 
-            // studentsTableAdapter
-            // 
-            this.studentsTableAdapter.ClearBeforeFill = true;
+            this.StudentsDataGridView.DataSource = this.studentsBindingSource;
+            this.StudentsDataGridView.Location = new System.Drawing.Point(12, 79);
+            this.StudentsDataGridView.Name = "StudentsDataGridView";
+            this.StudentsDataGridView.Size = new System.Drawing.Size(644, 255);
+            this.StudentsDataGridView.TabIndex = 0;
             // 
             // Checkbox
             // 
@@ -125,6 +111,20 @@
             this.markDataGridViewTextBoxColumn.DataPropertyName = "Mark";
             this.markDataGridViewTextBoxColumn.HeaderText = "Mark";
             this.markDataGridViewTextBoxColumn.Name = "markDataGridViewTextBoxColumn";
+            // 
+            // studentsBindingSource
+            // 
+            this.studentsBindingSource.DataMember = "Students";
+            this.studentsBindingSource.DataSource = this.studentsDatabaseDataSet;
+            // 
+            // studentsDatabaseDataSet
+            // 
+            this.studentsDatabaseDataSet.DataSetName = "StudentsDatabaseDataSet";
+            this.studentsDatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentsTableAdapter
+            // 
+            this.studentsTableAdapter.ClearBeforeFill = true;
             // 
             // SearchTextBox
             // 
@@ -180,6 +180,7 @@
             this.DeleteButton.TabIndex = 6;
             this.DeleteButton.Text = "Usuń studenta";
             this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // ExitButton
             // 
@@ -189,6 +190,7 @@
             this.ExitButton.TabIndex = 7;
             this.ExitButton.Text = "Wyjdź";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // Form1
             // 
@@ -203,13 +205,13 @@
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SearchTextBox);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.StudentsDataGridView);
             this.Name = "Form1";
             this.Text = "Baza studentów";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsDatabaseDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,7 +219,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView StudentsDataGridView;
         private StudentsDatabaseDataSet studentsDatabaseDataSet;
         private System.Windows.Forms.BindingSource studentsBindingSource;
         private StudentsDatabaseDataSetTableAdapters.StudentsTableAdapter studentsTableAdapter;

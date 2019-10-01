@@ -151,6 +151,7 @@
             this.CancelButton.TabIndex = 11;
             this.CancelButton.Text = "Anuluj";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // AddorEdit
             // 
