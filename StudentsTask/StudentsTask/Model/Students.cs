@@ -11,7 +11,7 @@ namespace StudentsTask.Model
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Students
     {
         public int ID { get; set; }

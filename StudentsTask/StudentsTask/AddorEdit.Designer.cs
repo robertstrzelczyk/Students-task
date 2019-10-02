@@ -37,11 +37,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.DateOfBirthTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.MarkTextBox = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.IDTextBox = new System.Windows.Forms.TextBox();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.SurnameLabel = new System.Windows.Forms.Label();
+            this.IndexNumberLabel = new System.Windows.Forms.Label();
+            this.DateOfBirthLabel = new System.Windows.Forms.Label();
+            this.MarkLabel = new System.Windows.Forms.Label();
+            this.MarkTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -129,13 +134,6 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Ocena: ";
             // 
-            // MarkTextBox
-            // 
-            this.MarkTextBox.Location = new System.Drawing.Point(134, 238);
-            this.MarkTextBox.Name = "MarkTextBox";
-            this.MarkTextBox.Size = new System.Drawing.Size(155, 20);
-            this.MarkTextBox.TabIndex = 9;
-            // 
             // SaveButton
             // 
             this.SaveButton.Location = new System.Drawing.Point(134, 288);
@@ -176,12 +174,94 @@
             this.IDTextBox.Size = new System.Drawing.Size(155, 20);
             this.IDTextBox.TabIndex = 13;
             // 
+            // NameLabel
+            // 
+            this.NameLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.NameLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.NameLabel.Location = new System.Drawing.Point(125, 104);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(164, 13);
+            this.NameLabel.TabIndex = 49;
+            this.NameLabel.Text = "To pole nie może być puste!";
+            this.NameLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.NameLabel.Visible = false;
+            // 
+            // SurnameLabel
+            // 
+            this.SurnameLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.SurnameLabel.AutoSize = true;
+            this.SurnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.SurnameLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.SurnameLabel.Location = new System.Drawing.Point(125, 144);
+            this.SurnameLabel.Name = "SurnameLabel";
+            this.SurnameLabel.Size = new System.Drawing.Size(164, 13);
+            this.SurnameLabel.TabIndex = 50;
+            this.SurnameLabel.Text = "To pole nie może być puste!";
+            this.SurnameLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.SurnameLabel.Visible = false;
+            // 
+            // IndexNumberLabel
+            // 
+            this.IndexNumberLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.IndexNumberLabel.AutoSize = true;
+            this.IndexNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.IndexNumberLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.IndexNumberLabel.Location = new System.Drawing.Point(125, 181);
+            this.IndexNumberLabel.Name = "IndexNumberLabel";
+            this.IndexNumberLabel.Size = new System.Drawing.Size(164, 13);
+            this.IndexNumberLabel.TabIndex = 51;
+            this.IndexNumberLabel.Text = "To pole nie może być puste!";
+            this.IndexNumberLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.IndexNumberLabel.Visible = false;
+            // 
+            // DateOfBirthLabel
+            // 
+            this.DateOfBirthLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.DateOfBirthLabel.AutoSize = true;
+            this.DateOfBirthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.DateOfBirthLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.DateOfBirthLabel.Location = new System.Drawing.Point(125, 220);
+            this.DateOfBirthLabel.Name = "DateOfBirthLabel";
+            this.DateOfBirthLabel.Size = new System.Drawing.Size(164, 13);
+            this.DateOfBirthLabel.TabIndex = 52;
+            this.DateOfBirthLabel.Text = "To pole nie może być puste!";
+            this.DateOfBirthLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.DateOfBirthLabel.Visible = false;
+            // 
+            // MarkLabel
+            // 
+            this.MarkLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.MarkLabel.AutoSize = true;
+            this.MarkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold);
+            this.MarkLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.MarkLabel.Location = new System.Drawing.Point(125, 261);
+            this.MarkLabel.Name = "MarkLabel";
+            this.MarkLabel.Size = new System.Drawing.Size(172, 13);
+            this.MarkLabel.TabIndex = 53;
+            this.MarkLabel.Text = "Pamiętaj, aby uzupełnić pole!";
+            this.MarkLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.MarkLabel.Visible = false;
+            // 
+            // MarkTextBox
+            // 
+            this.MarkTextBox.Location = new System.Drawing.Point(134, 238);
+            this.MarkTextBox.Name = "MarkTextBox";
+            this.MarkTextBox.Size = new System.Drawing.Size(155, 20);
+            this.MarkTextBox.TabIndex = 9;
+            // 
             // AddorEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(369, 379);
+            this.Controls.Add(this.MarkLabel);
+            this.Controls.Add(this.DateOfBirthLabel);
+            this.Controls.Add(this.IndexNumberLabel);
+            this.Controls.Add(this.SurnameLabel);
+            this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.IDTextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.CancelButton);
@@ -198,6 +278,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddorEdit";
             this.Text = "Dodaj";
+            this.Load += new System.EventHandler(this.AddorEdit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,10 +295,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox DateOfBirthTextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox MarkTextBox;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox IDTextBox;
+        private System.Windows.Forms.Label NameLabel;
+        private System.Windows.Forms.Label SurnameLabel;
+        private System.Windows.Forms.Label IndexNumberLabel;
+        private System.Windows.Forms.Label DateOfBirthLabel;
+        private System.Windows.Forms.Label MarkLabel;
+        private System.Windows.Forms.TextBox MarkTextBox;
     }
 }
