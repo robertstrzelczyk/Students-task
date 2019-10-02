@@ -69,6 +69,7 @@
             this.StudentsDataGridView.Name = "StudentsDataGridView";
             this.StudentsDataGridView.Size = new System.Drawing.Size(644, 255);
             this.StudentsDataGridView.TabIndex = 0;
+            this.StudentsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentsDataGridView_CellContentClick);
             // 
             // Checkbox
             // 
@@ -197,7 +198,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(810, 344);
+            this.ClientSize = new System.Drawing.Size(811, 360);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.EditButton);

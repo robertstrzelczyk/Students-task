@@ -17,6 +17,9 @@ namespace StudentsTask
         public Form1()
         {
             InitializeComponent();
+
+            RefreshStudents();
+            StudentsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -48,25 +51,34 @@ namespace StudentsTask
         {
 
         }
-
+        private void AddorEdit_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            RefreshStudents();
+        }
         private void AddButton_Click(object sender, EventArgs e)
         {
             AddorEdit Add = new AddorEdit();
-            //Add.FormClosing += new FormClosingEventHandler(this.AddorEdit_FormClosing);
+            Add.FormClosing += new FormClosingEventHandler(this.AddorEdit_FormClosing);
             Add.Show();
         }
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            AddorEdit Edit = new AddorEdit();
-            Edit.Show();
+            List<int> IDList = SelectRows();
+            foreach (int i in IDList)
+            {
+                AddorEdit Edit = new AddorEdit(i);
+                Edit.FormClosing += new FormClosingEventHandler(this.AddorEdit_FormClosing);
+                Edit.Show();
+
+            }
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+       
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             List<int> ListID = SelectRows();
@@ -74,10 +86,18 @@ namespace StudentsTask
             {
                 Students st = db.Students.Find(i);
                 db.Students.Remove(st);
+               
             }
 
             db.SaveChanges();
+
             RefreshStudents();
         }
+
+        private void StudentsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }

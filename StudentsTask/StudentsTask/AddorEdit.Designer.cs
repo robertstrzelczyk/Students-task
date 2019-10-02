@@ -40,6 +40,8 @@
             this.MarkTextBox = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.IDTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -142,6 +144,7 @@
             this.SaveButton.TabIndex = 10;
             this.SaveButton.Text = "Zapisz";
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // CancelButton
             // 
@@ -153,12 +156,34 @@
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(12, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 16);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "ID: ";
+            // 
+            // IDTextBox
+            // 
+            this.IDTextBox.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.IDTextBox.Location = new System.Drawing.Point(134, 41);
+            this.IDTextBox.Name = "IDTextBox";
+            this.IDTextBox.ReadOnly = true;
+            this.IDTextBox.Size = new System.Drawing.Size(155, 20);
+            this.IDTextBox.TabIndex = 13;
+            // 
             // AddorEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(369, 379);
+            this.Controls.Add(this.IDTextBox);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.MarkTextBox);
@@ -172,7 +197,7 @@
             this.Controls.Add(this.NameTextBox);
             this.Controls.Add(this.label1);
             this.Name = "AddorEdit";
-            this.Text = "AddorEdit";
+            this.Text = "Dodaj";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +217,7 @@
         private System.Windows.Forms.TextBox MarkTextBox;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox IDTextBox;
     }
 }

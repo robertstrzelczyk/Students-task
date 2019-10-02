@@ -1,3 +1,8 @@
+C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.AddorEdit.resources
+C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.Form1.resources
+C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.Properties.Resources.resources
+C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.csproj.GenerateResource.cache
+C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.csproj.CoreCompileInputs.cache
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\bin\Debug\StudentsTask.exe.config
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\bin\Debug\StudentsTask.exe
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\bin\Debug\StudentsTask.pdb
@@ -5,12 +10,7 @@ C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\bin\De
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\bin\Debug\EntityFramework.xml
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.csprojAssemblyReference.cache
-C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.Properties.Resources.resources
-C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.csproj.GenerateResource.cache
-C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.csproj.CoreCompileInputs.cache
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.csproj.CopyComplete
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.exe
 C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.pdb
-C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.Form1.resources
-C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.AddorEdit.resources
+C:\Users\Roberto\Documents\GitHub\Students-task\StudentsTask\StudentsTask\obj\Debug\StudentsTask.csprojAssemblyReference.cache
